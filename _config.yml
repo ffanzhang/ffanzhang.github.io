@@ -1,18 +1,10 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
 title: fan's github page 
 email: ffanzhang@hotmail.com 
 description: > # this means to ignore newlines until "baseurl:"
         fan's github page
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-#twitter_username: jekyllrb
+url: "http://ffanzhang.github.io" # the base hostname & protocol for your site
+#twitter_username: ffanzhang 
 github_username: ffanzhang 
 
 # Build settings

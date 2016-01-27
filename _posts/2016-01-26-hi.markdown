@@ -2,6 +2,6 @@
 layout: post
 title: "hi" 
 date:   2016-01-26 20:44:25 -0800
-categories: test 
+categories: [technical] 
 ---
 testing

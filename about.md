@@ -4,4 +4,4 @@ title: about
 permalink: /about/
 ---
 
-ubc bcs student
+i'm a ubc bcs student
