@@ -2,8 +2,8 @@ title: fan's github page
 email: ffanzhang@hotmail.com 
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ffanzhang.github.io" # the base hostname & protocol for your site
-#twitter_username: ffanzhang 
+url: "" # the base hostname & protocol for your site
+#twitter_username: fanzhang89 
 github_username: ffanzhang 
 
 # Build settings
