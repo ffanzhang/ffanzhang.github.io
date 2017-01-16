@@ -29,10 +29,12 @@ host to eliminate a bad answer given 2 answers is 100%. However, any attempt to
 eliminate an answer will improve your odds getting a question right! 
 So my proposed strategy for guessing a 3 choice multiple choice question is as
 follows:
+
 1. never choose a.
 2. if not b, choose c, else choose b.
 
 An even better one, if you have a fancy calculator to generate random numbers:
+
 1. randomly generate a number out of 1 to 3, that number is not the answer.
 2. eliminate one, and choose the other. 
 
