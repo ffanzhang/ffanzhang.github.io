@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Getting &lt;bits/stdc++.h&gt; header on a Mac"
-date: 2016-01-07 07:32:25 -0800
+date: 2017-01-07 07:32:25 -0800
 ---
 
 If you've stumbled on this post and just looking for a solution, you can skip all the mumbo jumbo and just try the snippet.

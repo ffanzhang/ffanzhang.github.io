@@ -2,7 +2,7 @@
 layout: post
 title: "Monty Hall's Problem and its application to guessing Multiple Choice
 Questions"
-date: 2016-01-15 22:55:25 -0800
+date: 2017-01-15 22:55:25 -0800
 ---
 At some point in your life, you probably have heard about monty hall's
 problem. Here's a [link](https://en.wikipedia.org/wiki/Monty_Hall_problem) to
