@@ -1,0 +1,57 @@
+---
+layout: post
+title: "HTTPS with custom domain on github pages"
+date: 2019-01-17 19:21:17 -0800
+---
+
+One of the things I attemped in the past but eventually gave up was setting up https
+with github pages for my domain. Back then, the only way to do it involves getting
+it hooked up with cloudflare. Although it is awesome to have added benefit of DDoS protection on top of TLS, 
+I did not find the solution elegant because I did not want any extra features
+than I needed. Fast forward today, I finally found out it is possible!
+Apparently, I had been living under a rock, github had a blog post about it
+back in Apr. 2018.
+
+# At your DNS provider's web page:
+#### "A Record" for apex domain (e.g. ffanzhang.com)
+I chose to setup an `A`
+record ([link](https://help.github.com/articles/setting-up-an-apex-domain/#configuring-a-records-with-your-dns-provider)).
+Alternatively you can setup `ANAME` or `ALIAS` if your DNS provider supports it ([link](https://help.github.com/articles/setting-up-an-apex-domain/#configuring-an-alias-or-aname-record-with-your-dns-provider)).
+```
+185.199.108.153 
+185.199.109.153 
+185.199.110.153 
+185.199.111.153
+```
+
+#### "CAA Record" for apex domain
+This allows letsencryt to issue certificates to your domain. Putting it
+here also allows the certificate authority to issue certificates to subdomains.
+Why apex domain? Because any subdomain inherits apex domain's CAA record.
+```
+0 issue "letsencrypt.org"
+```
+
+#### "CNAME Record" for your subdomain
+I pointed this record to my github.io original site.
+I think you can also try to point it to your apex domain.
+```
+YOUR_GITHUB_USERNAME.github.io
+```
+
+# At github repo's settings page:
+Scroll down, and you will see a section called "Custom Domain", where we can
+setup subdomain. From what I've read, this setup redirects apex domain to the subdomain. 
+
+You may ask why this complicated setup with two domain names. The issue was I
+attemped to setup https with strictly apex domain. However, this attempt failed
+because somehow the browser will try to use github's TLS certificate and will
+generate a nasty security warning. I also tried configuring with strictly subdomain but also failed. 
+Somehow, after some tweaking, the settings presented here is what worked.
+
+If your DNS provider has propagated the changes and everything seems to be
+working, there is also a tick mark at the settings page where you can enforce https, so that any http traffic is
+redirected to https.
+
+[Here](https://github.blog/2018-05-01-github-pages-custom-domains-https/)
+is the blog post if you are still confused about the process.
