@@ -46,17 +46,17 @@ sustainable solution, things can horribly break. Another stackoverflow solution 
 gcc. But my major concern was whether would the g++ command would override the
 existing g++ and potentially break the existing toolchain. The following is what I ended
 up doing after referencing a couple of stackoverflow posts. Just a heads up, this solution
-might not work in a year or two from now. If it stops working, try "brew install gcc[1-9]+" where "[1-9]+" is the version.
+might not work in a year or two from now. If it stops working, try "brew install gcc@version".
 
 - Fire up the terminal.
 - And if you have homebrew, type
 
 ```
-brew install gcc6
+brew install gcc@9
 ```
 - The process took about an hour, just minimize the window and do something else.
 
 ### Compiling with C++11
 ```
-g++-6 -std=c++11 sourcefile.cpp
+g++-9 -std=c++11 sourcefile.cpp
 ```
