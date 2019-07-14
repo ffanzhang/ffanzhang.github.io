@@ -3,11 +3,11 @@ layout: post
 title: "Cookies - Yummy"
 ---
 
-Finally graduated and had been in the job hunting for a while. What's interesting about cookies is I got asked about them at least twice, and I used to work in a "cookie factory".
+Finally graduated and had been in the job hunting club for a while. What's interesting about cookies is I got asked about them at least twice, and I used to work in a "cookie factory".
 
-My first attempt at answering this question had always been my usual style, short
+My first attempt at answering this question was short
 and simple, "a cookie is a piece of data that the server wants the browser
-to keep track of." The interviewer looked discontent, and by the intensity of voice
+to keep track of." The interviewer looked discontent, and by the exponential increase in intensity of voice the interviewer,
 I can feel the room air getting colder, "if the browser keeps
 track of the cookies, how does the server know the what the client is doing?" "Well,
 you see, in any of the following requests, the browser attaches the cookies with the
@@ -45,12 +45,12 @@ about how cookies work. This is a post about random complaints :) Maybe
 a lot of the interviewers are still used to legacy code base where sessions are
 bundled with cookies, so they deemed my answer incomplete.
 
-Having learnt my lessson. So my next attempt would be, "a cookie is a piece of
+Having learnt my lesson. So my next attempt would be, "a cookie is a piece of
 data that the server wants the browser to keep track of, the browser would try
 to send what it has in its cookie jar along with every request. In a
-sessionless server environment, this brief description suffices to describe the
+session-less server environment, this brief description suffices to describe the
 basic functionality of a cookie, I would be very happy to elaborate any details
 about sessions or types of cookies." 
 
-What did I get out from those two interviews? A slighly better
+What did I get out from those two interviews? A slightly better
 understanding of cookies, and a rare self entertaining post :)
