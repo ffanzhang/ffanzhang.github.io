@@ -12,7 +12,7 @@ properly cook an egg.
 
 The way I learnt how to boil eggs is as follows:
 1. place the eggs in a pot of cold water on a range.
-2. turn up the the heat to maximum.
+2. turn up the heat to maximum.
 3. as soon as the water boils, start the timer.
 4. as soon as the timer reaches 5 minutes, transfer the eggs into cold water.
 
@@ -30,15 +30,15 @@ to the quality of cooked eggs.
 
 The best recipe I can find online that minimizes the different
 things that could go wrong involves placing the eggs into the
-boiling water, and start the timer after. I am most satified with this recipe, but now the issue with this recipie is that,
+boiling water, and start the timer after. I am most satisfied with this recipe, but now the issue with this recipie is that,
 it failed to take into account the size of each egg.
 
 I tried to search for the exact formula online, all I found was some research paper with
 partial differential equations that I used to understand :( So I simplified my
 calculations to high school physics :)
-This forumla, $$Q = Mc\Delta T$$ means $$Energy\ Transfer = Mass\ of\ Object \times
+This formula, $$Q = Mc\Delta T$$ means $$Energy\ Transfer = Mass\ of\ Object \times
 Constant \times Change\ In\ Temperature$$, this formula is sort of deceiving
-because I learnt later in life the constant is not a constant. 
+because I learnt later in life the constant is not a constant.
 
 Since everyone knows how to cook egg whites properly, I'm using the constant(Specific Heat) of the egg yolk $$3120 J\ kg^{-1} C^{-1}$$. So my current model of an egg is a blob of egg yolk of unknown shape,
 the goal is to calculate the amount of energy to fully coagulate the egg yolk, which
@@ -46,14 +46,14 @@ means bringing up the egg temperature to 70 Degree Celsius. Also I assumed that
 it only takes a few seconds to bring the egg shell to reach thermal equilibrium with
 the boiling water. I'm also using
 a initial temperature of 4C, which means the egg is right out of the fridge.
-I'm using 50g as the mass of the egg for demostration purposes, and later we
+I'm using 50g as the mass of the egg for demonstration purposes, and later we
 can use the mass as a variable to compute the time needed to cook the egg.
 
 $$ Q = 0.050\frac{kg}{egg} \times 3120 \frac{J}{kg C} \times (70C - 4C) \approx 10300 \frac{J}{egg}$$
 
 Now the hard part is, given energy needed in total, how do we get the amount of time needed to
 cook the egg? If we know the rate of energy needed per unit time,
-then time = enegy / rate! Unfortunately, this only works if the rate is
+then time = energy / rate! Unfortunately, this only works if the rate is
 constant. Initially, the egg is super cold, the energy
 transfer is super fast because of the huge temperature difference between the water and the egg. As the egg gets warmer, the heat transfer slows down.
 This summarizes Fourier's law of thermal conductivity:
@@ -66,7 +66,7 @@ solve if we assume this blob of egg yolk is a sphere. A more accurate
 representation would an ellipsoid, which makes things even harder. What we need to approximate
 is the amount of time for the egg center to reach 70C, which is on average
 around 22mm away from the shell. To simplify the calculations, I have flattened the egg into a disk
-with 22mm thickness. The circular section of the disk has an area equilvalent to a 22mm radius sphere.
+with 22mm thickness. The circular section of the disk has an area equivalent to a 22mm radius sphere.
 
 So what is a reasonable estimation of average $$\nabla T$$? One of them is $$ (100C -
 4C) / 22mm$$, this is a global average after a few minutes after we placed the egg into the
@@ -94,7 +94,7 @@ $$ t_2 = \frac{Q}{\dot{Q_2}} = 10300 / 3.32 = 3102\ s = 52\ min $$
 As you can see, $$t_1$$ seems like a reasonable estimation,
 while $$ t_2 $$ is too much off. This is because I skipped the hard part of solving the heat differential equation and assumed that the egg is a flat disk.
 
-Let's use $$ t_1 $$ for now for a fully cooked egg. let's see how we have
+Let's use $$ t_1 $$ for now for a fully cooked egg. Let's see how we have
 arrived at the conclusion:
 
 $$ t = \frac{Q}{\dot{Q}} = \frac{Mc\Delta T} {k \nabla T \times 4  \pi R^2} $$
@@ -107,7 +107,7 @@ $$ t = \frac{3120 \times 66 \times M} {0.40 \times 94  \times 4  \pi R} $$
 
 $$ t = \frac{436M}{R} $$
 
-Where m is the mass of the egg in kg, and r is the average radius of the egg in meters, and t is in seconds.
+Where M is the mass of the egg in kg, and r is the average radius of the egg in meters, and t is in seconds.
 Now if the egg is a sphere, radius of the egg is related to the mass of the
 egg.
 
