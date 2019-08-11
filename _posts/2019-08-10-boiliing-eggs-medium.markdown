@@ -135,7 +135,7 @@ This gives us:
 
 $$ t = 3000 M^{2/3} $$
 
-So that is a good formula of a soft boiled egg?
+So what is a good formula of a soft boiled egg?
 $$ t = 3000 M^{2/3} $$
 - Small: 42g -> 0.042kg -> 362s = 6min 
 - Medium: 49g -> 0.049kg -> 402s = 6.7min 
@@ -143,7 +143,7 @@ $$ t = 3000 M^{2/3} $$
 - Extra Large: 63g -> 0.063kg -> 475s = 7.9min 
 - Jumbo: 70g -> 0.070kg -> 510s = 8.4min 
 
-So that is a good formula of a hard boiled egg?
+So what is a good formula of a hard boiled egg?
 $$ t = 7000 M^{2/3} $$
 - Small: 42g -> 0.042kg -> 846s  = 14.1min
 - Medium: 49g -> 0.049kg -> 937s = 15.6min
