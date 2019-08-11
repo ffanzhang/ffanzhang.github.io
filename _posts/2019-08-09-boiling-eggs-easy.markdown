@@ -151,7 +151,7 @@ $$ \frac{r}{R} = 0.69 $$
 
 $$ d = R - r = 0.31R $$
 
-Where d is the distance from the shell where temperature has reached 70C.
+Here d is the distance from the shell where temperature has reached 70C.
 
 $$ t = \frac{Q}{\dot{Q}} = \frac{Mc\Delta T} {k \nabla T \times 4  \pi r^2} $$
 
