@@ -154,7 +154,7 @@ $$ t = 7000 M^{2/3} $$
 You may ask, all these approximations are so inaccurate, what's the point?
 In all of those approximations, we have arrived at a simple formula, where
 t is proportional to $$ M^{2/3} $$.
-A practical use of this $$ t = c M^{2/3} $$ is, supposed you found the
+A practical use of this $$ t = c M^{2/3} $$ is, suppose you found the
 perfect time for a medium sized egg, but now you wanted to cook a jumbo egg. What
 would be the expected time to cook it?
 Suppose $$ t = 10min = 600s, M = 0.049 \Rightarrow c = 4481 $$,
