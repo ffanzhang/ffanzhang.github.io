@@ -14,7 +14,7 @@ During the process of making this library work, I learned some lessons and re-di
 
 ### Hard coded timeouts raise red flags
 In realistic network conditions, things usually arrive later than expected
-and designed. Double checking and reason about whether those timeouts are
+than designed. Double checking and reason about whether those timeouts are
 reasonable give the most bang for the buck. Actual field data gives valuable
 feedback on whether some of those timeouts need adjustment.
 
