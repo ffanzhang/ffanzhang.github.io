@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lessons Learnt Dealing with Unstable C/C++ Libraries with Cross-Platform Builds"
+title: "Lessons Learned Dealing with Unstable C/C++ Libraries with Cross-Platform Builds"
 date: 2020-12-28 10:47:00 -0800
 ---
 
